@@ -107,37 +107,41 @@ body {
 
 </div>
 </body>
-<niv>
+<div>
 <h2>Registration Page</h2><br>    
     <div class="addMember">    
-    <form action="memberinsert" method="post" >    
+    <form action="memberInsert" method="post" >    
         <label><b>Email    
         </b>    
         </label>    
-        <input type="text" name="Email " id="Uname" placeholder="Enter Email">    
+        <input type="text" id="mailId" placeholder="Enter Email">    
         <br><br>    
         <label><b>Name    
         </b>    
         </label>    
-        <input type="text" name="Name" id="Uname" placeholder="Enter Name">    
+        <input type="text" id="userName" placeholder="Enter Name">    
         <br><br>    
         <label><b>Mobile no   
         </b>    
         </label>    
-        <input type="text" name="Mobile no" id="Uname" placeholder="Enter Mobile no">    
+        <input type="text" id="mobNo" placeholder="Enter Mobile no">    
         <br><br>    
-        <label><b>Gender     
+        <label><b>Password     
         </b>    
         </label>    
-        <input type="text" name="Gender" id="Uname" placeholder="Enter Gender">    
+        <input type="password" id="pass" placeholder="Enter password">    
         <br><br>    
-        <label><b>Age     
+        <label><b>Conform Password     
         </b>    
         </label>    
-        <input type="text" name="Age" id="Uname" placeholder="Enter Age">    
+        <input type="password" id="cpass" placeholder="Conform Password">    
+        <br><br><b>Address     
+        </b>    
+        </label>    
+        <input type="text" id="address" placeholder="Enter Address">    
         <br><br>    
         <label>
-      <input type = "submit"  id="log" value = "Add Member">
+      <input type = "submit"  id="log" value = "Register">
 </label>
 </form>
 </div>

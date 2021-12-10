@@ -76,16 +76,6 @@ body {
  <div class="topnav" style="background-color:#FFD700;">
   <a href="#home"><h1>Hotel-Ping</h1></a>
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
-  <h2>
- <select action="location.jsp"  style="width:10%"; >
-  <option value="hyderabad">Hyderabad</option>
-  <option value="guntur">Guntur</option>
-  <option value="chennai">Chennai</option>
-  <option value="kolkata">Kolkata</option>
-  <option value="mysure">Mysure</option>
-  <option value="mumbai">Mumbai</option>
-</select>
-  </h2>
   <div class="search-container" >
     <form action="/action_page.php">
       <input type="text" placeholder="Search Hotel,villa" name="search">
@@ -94,8 +84,8 @@ body {
   </div>
 </div>
 <div class="topnav" align="right">
-  <a class="active" href="login">Login</a>
-  <a href="addMember">Registration</a>
+  <a href="login">Login</a>
+  <a href="registration">Registration</a>
 </div>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <div><img src='https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg' width=1520 height=550></img></div>
