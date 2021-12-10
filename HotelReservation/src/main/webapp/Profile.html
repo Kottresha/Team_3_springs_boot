@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile</title>
+    <style>
+     
+     body{
+         background-color: #000;
+     }
+     .container{
+         display:flex;
+         justify-content: center;
+         margin-top:50px;
+         margin-bottom:20px;
+         padding:20px;
+     }
+     .card{
+      padding:15px;
+    width: 400px;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+     }
+
+.user-name{
+    text-align: center;
+    color:darkmagenta;
+    font-family: sans-serif;
+}
+.welcome{
+    color:green;
+    text-align: center;
+}
+.bottom-card{
+    padding:15px;
+    width: 350px;
+    background-color: #8d8181;
+    border: none;
+    display: flex;
+    flex-direction:row;
+    margin:10px;
+}
+.user-name{
+    width: 120px;
+    background-color: #fff;
+    padding:5px;
+}
+.buttons{
+    display: flex;
+    padding-left:25px;
+    flex-direction: column;
+    justify-content: center;
+}
+.button{
+            background-color:steelblue;
+            color:white;
+            height:38px;
+            width:120px;
+            font-weight: bold;
+            border-width: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius:5px;
+            margin:5px;
+        }
+        .Back-button{
+            background-color:black;
+            color:white;
+            height:38px;
+            width:120px;
+            font-weight: bold;
+            border-width: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius:5px;
+            margin:5px;
+        }
+        .end{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="card">
+        <h1 class="welcome">Welcome To Indra Comforts</h1>
+        <div class="bottom-card">
+          <div class="user-name">
+              <h1>User Name</h1>
+             </div>
+        <div class="buttons">
+        <button class="button">Check Availabilty</button>
+        <button class="button">Book Rooms</button>
+        <button class="button">Feedback</button>
+        </div>
+    </div>
+    <div class="end">
+    <button class="Back-button">Back</button>
+</div>
+</div>
+</body>
+</html>
