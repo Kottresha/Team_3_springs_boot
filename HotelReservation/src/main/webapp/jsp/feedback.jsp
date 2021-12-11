@@ -111,17 +111,35 @@ body {
 <h2>Registration Page</h2><br>    
     <div class="addMember">    
     <form action="register" method="post">    
-        <label> <b> How Would like the Service? </b> </label>    
-        <input type="text" id="mailId" placeholder="Enter Mail ID">    
+        <label> <b> How Would like the Service? </b> </label>
+			<select id = "service">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
         <br><br>
         <label> <b> Is the Rooms are Comfortable? </b> </label>
-        <input type="text" id="Uname" placeholder="Enter Name">    
+        	<select id = "roomRate">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>    
         <br><br>
         <label> <b> Overall Rating? </b> </label>    
-        <input type="text" id="mobNo" placeholder="Enter Mobile Number">    
+        	<select id = "overall">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>   
         <br><br>
-        <label> <b> address </b> </label>    
-        <input type="text" id="address" placeholder="Enter Address">    
+        <label> <b> Any Suggestion </b> </label>    
+        <textarea id="description" rows="5" cols="33" placeholder="Description"></textarea>    
         <br><br>
         <input type="submit" value="Register">       
         <br><br> 
