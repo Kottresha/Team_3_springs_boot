@@ -110,26 +110,23 @@ body {
 <div>
 <h2>Registration Page</h2><br>    
     <div class="addMember">    
-    <form action="register" method="post">    
-        <label> <b> Mail ID </b> </label>    
-        <input type="text" id="mailId" placeholder="Enter Mail ID">    
+    <form action="updateRooms" method="post">    
+        <label> <b> Hotel ID </b> </label>    
+        <input type="text" id="hotelID" placeholder="Enter Hotel ID">    
         <br><br>
-        <label> <b> User Name </b> </label>    
-        <input type="text" id="Uname" placeholder="Enter Name">    
+        <label> <b> Number of Rooms Available </b> </label>    
+        <input type="text" id="noRooms" placeholder="Number of Rooms Available">    
         <br><br>
-        <label> <b> Mobile Number </b> </label>    
-        <input type="text" id="mobNo" placeholder="Enter Mobile Number">    
+        <label> <b> Single Coat </b> </label>    
+        <input type="text" id="singleRooms" placeholder="Single Coat Rooms">    
         <br><br>
-        <label> <b> password </b> </label>    
-        <input type="password" id="pass" placeholder="Enter Password">    
+        <label> <b> Double Coat </b> </label>    
+        <input type="text" id="sharingRooms" placeholder="Double Coat Sharing"> 
         <br><br>
-        <label> <b> Conform Password </b> </label>    
-        <input type="password" id="cPass" placeholder="Re-Type Password">    
-        <br><br>
-        <label> <b> address </b> </label>    
+        <label> <b> Hotel Address </b> </label>    
         <input type="text" id="address" placeholder="Enter Address">    
         <br><br>
-        <input type="submit" value="Register">       
+        <input type="submit" value="update">       
         <br><br> 
     </form>
 </div>

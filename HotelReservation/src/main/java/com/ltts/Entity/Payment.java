@@ -10,9 +10,16 @@ public class Payment {
 
 	
 	@Id
+	int cvv;
 	String userId;
 	String cardNumber;
 	
+	public int getCvv() {
+		return cvv;
+	}
+	public void setCvv(int cvv) {
+		this.cvv = cvv;
+	}
 	public String getUserId() {
 		return userId;
 	}

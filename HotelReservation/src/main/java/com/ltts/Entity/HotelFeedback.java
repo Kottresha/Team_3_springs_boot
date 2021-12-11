@@ -14,9 +14,15 @@ public class HotelFeedback {
 	int roomRating;
 	int OverallRating;
 	String description;
-	String hotelId;
+	int hotelId;
 	
 	
+	public int getHotelId() {
+		return hotelId;
+	}
+	public void setHotelId(int hotelId) {
+		this.hotelId = hotelId;
+	}
 	public int getService() {
 		return service;
 	}

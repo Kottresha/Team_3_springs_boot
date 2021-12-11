@@ -9,11 +9,12 @@ import javax.persistence.Table;
 public class HotelOwner {
 
 	@Id
+	int hotelId;
 	String hotelOwnerUserName;
 	String hotelOwnerUserId;
 	String hotelName;
-	String hotelId;
 	String hotelCity;
+	
 	public String getHotelOwnerUserName() {
 		return hotelOwnerUserName;
 	}
@@ -32,10 +33,10 @@ public class HotelOwner {
 	public void setHotelName(String hotelName) {
 		this.hotelName = hotelName;
 	}
-	public String getHotelId() {
+	public int getHotelId() {
 		return hotelId;
 	}
-	public void setHotelId(String hotelId) {
+	public void setHotelId(int hotelId) {
 		this.hotelId = hotelId;
 	}
 	public String getHotelCity() {

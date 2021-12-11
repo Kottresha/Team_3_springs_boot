@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+<title>Login Page</title>
 <head>  
    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
 </head> 
@@ -14,8 +15,8 @@ niv
     background-color:#6abadeba;  
     font-family: 'Arial';  
 }  
-.addMember{  
-        width: 500px;
+.login{  
+        width: 500px;  
         overflow: hidden;  
         margin: auto;  
         margin: 20 0 0 450px;  
@@ -102,36 +103,27 @@ body {
 <body style="background-color:	#F0FFF0;">
 
 <div class="topnav" style="background-color:#FFD700;">
-  <a href="index"><h1>Hotel-Ping</h1></a>
+  <a href="#home"><h1>Hotel-Ping</h1></a>
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
 
 </div>
 </body>
 <div>
-<h2>Registration Page</h2><br>    
-    <div class="addMember">    
-    <form action="register" method="post">    
-        <label> <b> Mail ID </b> </label>    
-        <input type="text" id="mailId" placeholder="Enter Mail ID">    
+ <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form action="insertCardDetails" method="post">    
+        <label> <b> Card Number </b> </label>    
+        <input type="text" id="cardNumber" placeholder="Enter Card Number">    
+        <br><br>  
+        <label> <b> Card Expire year </b> </label>    
+        <input type="text" id="year" placeholder="Enter Card Expire Year">
+        <br><br>  
+        <label> <b> CVV </b> </label>
+        <input type="text" id="cvv" placeholder="CVV">
         <br><br>
-        <label> <b> User Name </b> </label>    
-        <input type="text" id="Uname" placeholder="Enter Name">    
-        <br><br>
-        <label> <b> Mobile Number </b> </label>    
-        <input type="text" id="mobNo" placeholder="Enter Mobile Number">    
-        <br><br>
-        <label> <b> password </b> </label>    
-        <input type="password" id="pass" placeholder="Enter Password">    
-        <br><br>
-        <label> <b> Conform Password </b> </label>    
-        <input type="password" id="cPass" placeholder="Re-Type Password">    
-        <br><br>
-        <label> <b> address </b> </label>    
-        <input type="text" id="address" placeholder="Enter Address">    
-        <br><br>
-        <input type="submit" value="Register">       
+        <input type="submit" value="Log In ">       
         <br><br> 
     </form>
-</div>
+    </div>     
 </div>
 </html>

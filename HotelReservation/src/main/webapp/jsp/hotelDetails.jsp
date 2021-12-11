@@ -110,26 +110,23 @@ body {
 <div>
 <h2>Registration Page</h2><br>    
     <div class="addMember">    
-    <form action="register" method="post">    
-        <label> <b> Mail ID </b> </label>    
+    <form action="insertHotel" method="post">    
+        <label> <b> Hotel Owner Name </b> </label>    
+        <input type="text" id="ownerName" placeholder="Enter Hotel Owner Name">    
+        <br><br>
+        <label> <b> Mail Id </b> </label>    
         <input type="text" id="mailId" placeholder="Enter Mail ID">    
         <br><br>
-        <label> <b> User Name </b> </label>    
-        <input type="text" id="Uname" placeholder="Enter Name">    
+        <label> <b> Hotel Name </b> </label>    
+        <input type="text" id="hotelName" placeholder="Enter Hotel Name">    
         <br><br>
-        <label> <b> Mobile Number </b> </label>    
-        <input type="text" id="mobNo" placeholder="Enter Mobile Number">    
+        <label> <b> Hotel ID </b> </label>    
+        <input type="text" id="hotelID" placeholder="Enter Hotel ID">    
         <br><br>
-        <label> <b> password </b> </label>    
-        <input type="password" id="pass" placeholder="Enter Password">    
+        <label> <b> Location </b> </label>    
+        <input type="text" id="city" placeholder="Enter Location">    
         <br><br>
-        <label> <b> Conform Password </b> </label>    
-        <input type="password" id="cPass" placeholder="Re-Type Password">    
-        <br><br>
-        <label> <b> address </b> </label>    
-        <input type="text" id="address" placeholder="Enter Address">    
-        <br><br>
-        <input type="submit" value="Register">       
+        <input type="submit" value="update">       
         <br><br> 
     </form>
 </div>

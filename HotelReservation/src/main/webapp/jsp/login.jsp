@@ -108,35 +108,19 @@ body {
 
 </div>
 </body>
-<niv>
+<div>
  <h2>Login Page</h2><br>    
     <div class="login">    
-    <form id="login" method="get" action="tryToLogin">    
-        <label><b>User Name     
-        </b>    
-        </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Username">    
-        <br><br>    
-        <label><b>Password     
-        </b>    
-        </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-        <br><br>    
-        <input type="button" name="log" id="log" value="Log In " onclick="myFunction()">       
-        <br><br>    
-        <input type="checkbox" id="check">    
-        <span>Remember me</span>    
-        <br><br>    
-         <a href="#">Forgot Password</a>    
-    </div>  
-    </form>     
-    
-      
-</niv>
-<script>
-function myFunction() {
-  location.replace("index.jsp")
-}
-</script>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <form action="tryToLogin" method="post">    
+        <label> <b> User Name </b> </label>    
+        <input type="text" id="Uname" placeholder="User Name">    
+        <br><br>  
+        <label> <b> Password </b> </label>    
+        <input type="password" id="pass" placeholder="User Name">    
+        <br><br>
+        <input type="submit" value="Log In ">       
+        <br><br> 
+    </form>
+    </div>     
+</div>
 </html>

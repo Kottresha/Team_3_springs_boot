@@ -111,20 +111,14 @@ body {
 <h2>Registration Page</h2><br>    
     <div class="addMember">    
     <form action="register" method="post">    
-        <label> <b> Mail ID </b> </label>    
+        <label> <b> How Would like the Service? </b> </label>    
         <input type="text" id="mailId" placeholder="Enter Mail ID">    
         <br><br>
-        <label> <b> User Name </b> </label>    
+        <label> <b> Is the Rooms are Comfortable? </b> </label>
         <input type="text" id="Uname" placeholder="Enter Name">    
         <br><br>
-        <label> <b> Mobile Number </b> </label>    
+        <label> <b> Overall Rating? </b> </label>    
         <input type="text" id="mobNo" placeholder="Enter Mobile Number">    
-        <br><br>
-        <label> <b> password </b> </label>    
-        <input type="password" id="pass" placeholder="Enter Password">    
-        <br><br>
-        <label> <b> Conform Password </b> </label>    
-        <input type="password" id="cPass" placeholder="Re-Type Password">    
         <br><br>
         <label> <b> address </b> </label>    
         <input type="text" id="address" placeholder="Enter Address">    

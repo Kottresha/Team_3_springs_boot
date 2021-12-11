@@ -11,7 +11,6 @@ import javax.persistence.Table;
 public class User {
 	
 	@Id
-	int registerId;
 	String userMailid;
 	String userName;
 	String mobNo;
@@ -31,16 +30,6 @@ public class User {
 		this.address = address;
 	}
 	
-	
-
-	public int getRegisterId() {
-		return registerId;
-	}
-
-	public void setRegisterId(int registerId) {
-		this.registerId = registerId;
-	}
-
 	public String getUserMailid() {
 		return userMailid;
 	}
