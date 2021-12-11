@@ -102,7 +102,7 @@ body {
 <body style="background-color:	#F0FFF0;">
 
 <div class="topnav" style="background-color:#FFD700;">
-  <a href="index"><h1>Hotel-Ping</h1></a>
+  <a href="uhome"><h1>Hotel-Ping</h1></a>
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
 
 </div>
@@ -110,7 +110,7 @@ body {
 <div>
 <h2>Registration Page</h2><br>    
     <div class="addMember">    
-    <form action="register" method="post">    
+    <form action="provideFeedback" method="post">    
         <label> <b> How Would like the Service? </b> </label>
 			<select id = "service">
 				<option value="1">1</option>
@@ -141,7 +141,7 @@ body {
         <label> <b> Any Suggestion </b> </label>    
         <textarea id="description" rows="5" cols="33" placeholder="Description"></textarea>    
         <br><br>
-        <input type="submit" value="Register">       
+        <input type="submit" value="Submit">       
         <br><br> 
     </form>
 </div>

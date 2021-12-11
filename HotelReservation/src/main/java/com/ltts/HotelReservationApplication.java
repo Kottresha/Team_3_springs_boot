@@ -5,10 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import com.ltts.Entity.HotelDetails;
+import com.ltts.Entity.HotelFeedback;
 import com.ltts.Entity.HotelOwner;
 import com.ltts.Entity.Payment;
 import com.ltts.Entity.User;
 import com.ltts.repository.HotelDetailsRepository;
+import com.ltts.repository.HotelFeedbackRepository;
 import com.ltts.repository.HotelOwerRepository;
 import com.ltts.repository.PaymentRepository;
 import com.ltts.repository.UserRepository;
@@ -39,6 +41,12 @@ public class HotelReservationApplication {
 		// TODO Auto-generated method stub
 		HotelDetailsRepository hdr = cont.getBean(HotelDetailsRepository.class);
 		hdr.save(hd);
+	}
+
+	public static void updateFeedback(HotelFeedback hf) {
+		// TODO Auto-generated method stub
+		HotelFeedbackRepository hfr = cont.getBean(HotelFeedbackRepository.class);
+		hfr.save(hf);		
 	}
 
 }

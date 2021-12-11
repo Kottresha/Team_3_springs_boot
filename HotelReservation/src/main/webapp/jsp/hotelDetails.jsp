@@ -102,7 +102,7 @@ body {
 <body style="background-color:	#F0FFF0;">
 
 <div class="topnav" style="background-color:#FFD700;">
-  <a href="index"><h1>Hotel-Ping</h1></a>
+  <a href="ahome"><h1>Hotel-Ping</h1></a>
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
 
 </div>

@@ -74,13 +74,14 @@ body {
 </style>
 <body style="background-color:	#F0FFF0;">
  <div class="topnav" style="background-color:#FFD700;">
-  <a href="ahome"><h1>Hotel-Ping</h1></a>
+  <a href="uhome"><h1>Hotel-Ping</h1></a>
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
 </div>
 <div class="topnav" align="right">
-  <a href="hotelDetails">Register Hotel</a>
-  <a href="RoomDetails">Update Hotel Rooms Information</a>
-  <a href="logout">Log Out</a>
+  <a href="checkAvailability"> View Availability </a>
+  <a href="book"> Book Rooms </a>
+  <a href="feedback"> Feedback </a>
+  <a href="logout"> Log Out </a>
 </div>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <div><img src='https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg' width=1520 height=550></img></div>

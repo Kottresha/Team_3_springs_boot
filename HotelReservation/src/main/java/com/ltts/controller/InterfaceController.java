@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.ltts.HotelReservationApplication;
 import com.ltts.Entity.HotelDetails;
+import com.ltts.Entity.HotelFeedback;
 import com.ltts.Entity.HotelOwner;
 import com.ltts.Entity.Payment;
 import com.ltts.repository.AdminRepository;
@@ -46,9 +47,34 @@ public class InterfaceController {
 		return "RoomDetails";
 	}
 	
+	@RequestMapping("/uhome")
+	public String uhome() {
+		return "userProfile";
+	}
+	
+	@RequestMapping("/hhome")
+	public String hhome() {
+		return "home";
+	}
+	
+	@RequestMapping("/ahome")
+	public String ahome() {
+		return "adminProfile";
+	}
+	
 	@RequestMapping("/logout")
 	public String logout() {
 		return "home";
+	}
+	
+	@RequestMapping("/feedback")
+	public String feedback() {
+		return "feedback";
+	}
+	
+	@RequestMapping("/book")
+	public String book() {
+		return "Book";
 	}
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
@@ -122,6 +148,21 @@ public class InterfaceController {
 		HotelReservationApplication.updateRoom(hd);
 		
 		return "adminProfile";
+	}
+	
+	@RequestMapping(value = "provideFeedback", method = RequestMethod.POST)
+	public String provideFeedback(HttpServletRequest session) {
+		
+		HotelFeedback hf = new HotelFeedback();
+		
+		hf.setService(Integer.parseInt(session.getParameter("service")));
+		hf.setRoomRating(Integer.parseInt(session.getParameter("roomRate")));
+		hf.setOverallRating(Integer.parseInt(session.getParameter("overall")));
+		hf.setDescription(session.getParameter("description"));
+		
+		HotelReservationApplication.updateFeedback(hf);
+		
+		return "userProfile";
 	}
 
 }

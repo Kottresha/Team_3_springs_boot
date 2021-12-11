@@ -11,7 +11,7 @@ public interface AdminRepository extends JpaRepository <Admin, String>{
 
 	@Query("select a from admin a where a.adminUserName=?1 and a.adminPassword=?2")
 	public static boolean findUser(String adminUserName, String adminPassword){
-		return true;
+		return false;
 	}
 	
 }
